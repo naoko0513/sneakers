@@ -1,0 +1,301 @@
+.mask {
+    transition: all 1.0s;
+    position: fixed;
+}
+
+.open .mask {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#000;
+    opacity: .8;
+}
+
+.navi {
+    position: fixed;
+    transition: all 1.0s;
+    opacity: 0;
+}
+
+.open .navi {
+    display: block;
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    opacity: 1;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+}
+.burger-btn{
+  display: block;
+  width: 50px;
+  height: 50px;      
+  position: relative;      
+  z-index: 3;
+  border:none;  
+  margin-right: 5vh;
+}    
+.bar{      
+  width: 30px;      
+  height: 1px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: black;   
+  text-align: right;
+}    
+.bar_top{   
+  top: 10px;
+}
+.bar_mid{    
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bar_bottom{
+  bottom: 10px;
+}
+
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,10px) rotate(45deg);      
+  transition: transform .3s;    
+}
+
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}
+
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-8px) rotate(-45deg);      
+transition: transform .3s;    
+}
+
+.nav-wrapper{      
+  display: none;     
+  width: 100vw;      
+  height: 100vh;      
+  position: fixed;      
+  top: 0;      
+  left: 0;       
+  z-index: 2;     
+}     
+.header-nav{        
+  width: 100%;        
+  height: 100%;        
+  background-color:#000;
+  opacity: .8;
+  z-index: 2;      
+}     
+.header-nav.nav-list{        
+  display: block;        
+  position: absolute;        
+  top: 50%;        
+  left: 50%;        
+  transform: translate(-50%,-50%);        
+  text-align: center; 
+}      
+.header-nav.nav-item{        
+  margin-right: 0;        
+  margin-bottom: 40px;
+  color: white;
+}
+body.noscroll{
+  overflow: hidden;
+}
+
+.title {
+    vertical-align: middle;
+    padding-left: 5vh;
+}
+
+#video {
+    max-width: 100%;
+}
+
+.v-box video{
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20vh;
+}
+
+.pickup-content img{
+    width: 55vh;
+    height: 35vh;
+    margin-left: 30px;
+}
+
+#feature {
+    margin-top: 5vh;
+    margin: auto;
+    max-width: 1240px;
+
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 31%;
+    margin-bottom: 30px;
+    background: white;/*背景色*/
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.feature-img {
+    margin: 0 auto;
+}
+
+.feature-img img{
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.text-box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text1 {
+    margin-top: 3vh;
+}
+
+.text2 {
+    margin-top: 3vh;
+    text-align: right;
+}
+
+#footer {
+    width: 100%;
+    margin-top: 10vh;
+    background-color: black;
+    color: white;
+}
+
+.footer-box{
+    display: flex;
+    justify-content:space-around;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.left-box {
+    width: 45%;
+}
+
+.content2 {
+    text-align: center;
+    padding-top:5vh;
+}
+
+.footer-text {
+    padding: 2vh;
+    font-size: 14px;
+}
+
+.right-box{
+    width: 45%;
+}
+
+.form-box {
+    background-color: white;
+    width: 100%;
+}
+
+.footer-text2 p{
+    margin-top: 20px;
+}
+
+.form-input input{
+    padding: 10px;
+}
+
+.but {
+    border-color: white;
+}
+
+.footer-last {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.form-but {
+    width: 200px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 1px #fff;
+    padding: 12px 0;
+}
+
+.footer-last {
+    padding-top: 10vh;
+    font-size: 13px;
+}
+@media screen and (max-width: 600px){
+
+ video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.pickup-content img{
+    width: 80%;
+    height: 25vh;
+    padding: 0;
+}
+
+.container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.feature-box {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+.footer-box {
+    flex-direction: column;
+}
+
+.left-box{
+    width: 100%;
+}
+
+.right-box {
+    width: 100%;
+}
+
+.form-but {
+    width: 100%;
+}
+}

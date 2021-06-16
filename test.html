@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .burger-btn {
+            background-color: red;
+        }
+        
+        .mask {
+            transition: all 2.0s;
+        }
+        
+        .open .mask {
+            background: #000;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="test">
+        aaaaaa
+        <div class="burger-btn">test</div>
+        <div class="mask"></div>
+    </header>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $('.burger-btn').on('click',function(){
+            $('.test').toggleClass('open');
+        });    
+    </script>
+</body>
+</html>
